@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DatabaseAudio" representedClassName="DatabaseAudio" syncable="YES" codeGenerationType="class">
+        <attribute name="audio" optional="YES" attributeType="Binary"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="path" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="DatabaseImage" representedClassName="DatabaseImage" syncable="YES" codeGenerationType="class">
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="uniqueId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="DatabaseVideo" representedClassName="DatabaseVideo" syncable="YES" codeGenerationType="class">
+        <attribute name="actualVideo" optional="YES" attributeType="Binary"/>
+        <attribute name="uniqueId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="videoUrl" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="DatabaseAudio" positionX="-54" positionY="27" width="128" height="74"/>
+        <element name="DatabaseImage" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="DatabaseVideo" positionX="-54" positionY="18" width="128" height="74"/>
+    </elements>
+</model>
