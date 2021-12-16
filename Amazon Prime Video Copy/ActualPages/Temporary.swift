@@ -318,7 +318,7 @@ struct TopNavigation: View{
     var body: some View{
         HStack(spacing: 15){
             VStack(spacing: 3){
-                Text("Home")
+                Text("HOMEMMEMEMEEM")
                     .foregroundColor(homeWritingColor)
                     .onTapGesture(perform: {
                         if(homeColor != .white){
