@@ -247,21 +247,29 @@ struct CustomTabView: View{
                     zStackOffsetChanged = 0
                     if(value.translation.width < 0){
                         //Swipe from middle(right) to left, move the current image to the left
+//                        if(featuredIndex != 3){
+//                            featuredIndex += 1
+//                            zStackOffset -= screenWidth
+//                        } else {
+//                            featuredIndex = 0
+//                            zStackOffset = 0
+//                        }
                         if(featuredIndex != 3){
                             featuredIndex += 1
                             zStackOffset -= screenWidth
-                        } else {
-                            featuredIndex = 0
-                            zStackOffset = 0
                         }
                         
                         
                     } else if(value.translation.width > 0){
                         //Swipe from middle(or left) to right, move the current image to the right
-                        if(featuredIndex == 0){
-                            featuredIndex = 3
-                            zStackOffset = 3*screenWidth
-                        } else {
+//                        if(featuredIndex == 0){
+//                            featuredIndex = 3
+//                            zStackOffset = 3*screenWidth
+//                        } else {
+//                            featuredIndex -= 1
+//                            zStackOffset += screenWidth
+//                        }
+                        if(featuredIndex > 0){
                             featuredIndex -= 1
                             zStackOffset += screenWidth
                         }

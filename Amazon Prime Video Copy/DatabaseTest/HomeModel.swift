@@ -127,7 +127,7 @@ struct SeriesNumbersAndId {
 }
 
 final class MyModelClass: ObservableObject {
-//    var myMovies: [Movie]
+    var myMovies: [Movie]
     var isFirstTime: Bool
     var toSortSeries: Bool
     var seriesNumbersAndId: [SeriesNumbersAndId]
@@ -138,7 +138,7 @@ final class MyModelClass: ObservableObject {
     
     
     init(){
-//        myMovies = []
+        myMovies = []
         isFirstTime = true
         toSortSeries = false
         seriesNumbersAndId = []
@@ -149,7 +149,7 @@ final class MyModelClass: ObservableObject {
         showNewPage = false
     }
     
-    @Published var myMovies: [Movie] = []
+//    @Published var myMovies: [Movie] = []
     @Published var showDetailsFullPage: String? = nil
     @Published var showDetails: Bool = false
     @Published var numberOfSeries: Int = 0
